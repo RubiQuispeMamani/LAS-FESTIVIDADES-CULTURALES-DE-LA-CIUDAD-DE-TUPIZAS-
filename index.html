@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño de una Página Web</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Raleway:wght@600&family=Dancing+Script:wght@700&display=swap');
+
+        body {
+            font-family: 'Raleway', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('fondo.jpg') no-repeat center center fixed; 
+            background-size: cover; 
+            color: #e0e0e0; 
+            height: 100vh; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .menu {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: linear-gradient(90deg, rgba(18, 18, 18, 0.9), rgba(214, 153, 39, 0.9));
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 0;
+            z-index: 1000;
+        }
+
+        .menu a {
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        .menu h3 {
+            margin: 0;
+            padding: 10px 25px;
+            background-color: rgba(214, 158, 36, 0.8);
+            border: 2px solid #ffcc80;
+            border-radius: 50px;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 1px;
+            font-family: 'Roboto', sans-serif;
+            box-shadow: 0px 0px 10px rgba(206, 142, 59, 0.5);
+        }
+
+        .menu h3:hover {
+            background-color: rgba(255, 152, 0, 0.8);
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0px 4px 15px rgba(255, 152, 0, 0.5);
+        }
+
+        .menu h3:not(:last-child)::after {
+            content: '|'; 
+            margin-left: 15px; 
+            color: rgba(255, 255, 255, 0.7); 
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            text-align: center;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            color: rgba(255, 255, 255, 0.9);
+            background: rgba(0, 0, 0, 0.3);
+            padding: 15px 30px;
+            border-radius: 15px;
+            font-family: 'Dancing Script', cursive;
+            letter-spacing: 1px;
+            max-width: 90%;
+            margin: 0 auto;
+            box-shadow: none;
+        }
+
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            color: #ffb74d;
+            padding: 12px 0;
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.4rem;
+            box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.5);
+            letter-spacing: 1.2px;
+            text-shadow: 2px 2px 4px #000;
+        }
+
+        .footer {
+            animation: slideUp 1s ease-out;
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(100%);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.8rem;
+            }
+
+            .footer {
+                font-size: 1.2rem;
+                padding: 10px 0;
+            }
+
+            .menu h3 {
+                padding: 8px 16px;
+                margin: 0 10px;
+            }
+        }
+
+        .logo-container {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            z-index: 9999;
+        }
+
+        .logo {
+            width: 100px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="menu">
+        <a href="historia/historia.html"><h3>Historia</h3></a>
+        <a href="tipo_historia/"><h3>Tipos De Festividades</h3></a>
+        <a href="festividades/festividad.html"><h3>Festividades</h3></a>
+        <a href="ubicacion/ubicacion.html"><h3>Ubicación</h3></a>
+    </div>
+    <h1>FESTIVIDADES DE TUPIZA: VIVE LA MAGIA DE NUESTRAS TRADICIONES </h1>
+    <div class="footer">
+        Tupiza, la joya bella de Bolivia
+    </div>
+</body>
+</html>
